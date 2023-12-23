@@ -23,6 +23,7 @@ dependencies {
         exclude(group = "net.byteflux", module = "libby-bukkit")
     }
     compileOnly("com.dfsek.terra:common:6.4.1-BETA+3aef97738")
+    compileOnly("dev.xhyrom:lighteco-api:0.1.0")
 
     compileOnly(fileTree("../lib") {
         include("*.jar")
@@ -31,6 +32,7 @@ dependencies {
 
 repositories {
     maven("https://jitpack.io/")
+    maven("https://repo.jopga.me/releases")
 }
 
 configurations.all {

@@ -13,6 +13,7 @@ website: willfp.com
 
 softdepend:
   - eco
+  - lighteco-bukkit
   - AureliumSkills
   - Jobs
   - LevelledMobs

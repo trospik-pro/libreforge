@@ -15,6 +15,7 @@ import com.willfp.libreforge.integrations.citizens.CitizensIntegration
 import com.willfp.libreforge.integrations.custombiomes.impl.CustomBiomesTerra
 import com.willfp.libreforge.integrations.jobs.JobsIntegration
 import com.willfp.libreforge.integrations.levelledmobs.LevelledMobsIntegration
+import com.willfp.libreforge.integrations.lighteco.LightEcoIntegration
 import com.willfp.libreforge.integrations.mcmmo.McMMOIntegration
 import com.willfp.libreforge.integrations.paper.PaperIntegration
 import com.willfp.libreforge.integrations.scyther.ScytherIntegration
@@ -155,6 +156,7 @@ class LibreforgeSpigotPlugin : EcoPlugin() {
 
     override fun loadIntegrationLoaders(): List<IntegrationLoader> {
         return listOf(
+            IntegrationLoader("lighteco-bukkit") { LightEcoIntegration.load(this) },
             IntegrationLoader("AureliumSkills") { AureliumSkillsIntegration.load(this) },
             IntegrationLoader("Jobs") { JobsIntegration.load(this) },
             IntegrationLoader("LevelledMobs") { LevelledMobsIntegration.load(this) },
